@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { BarChart3, FlaskConical, Home } from "lucide-react";
+import danricxLogo from "@/assets/danricx-logo.png";
 
 const navItems = [
   { to: "/", label: "Overview", icon: Home },
@@ -13,10 +14,10 @@ const AppNav = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <h1 className="font-display text-lg font-bold tracking-tight">
-          <span className="text-gradient">Pharma</span>
-          <span className="text-foreground">Insights</span>
-        </h1>
+        <Link to="/">
+          <img src={danricxLogo} alt="DANRICX" className="h-10" />
+        </Link>
+        
         <div className="flex items-center gap-1">
           {navItems.map(({ to, label, icon: Icon }) => {
             const active = location.pathname === to;
