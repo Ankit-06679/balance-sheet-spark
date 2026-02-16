@@ -166,4 +166,4 @@ export const financialData: FinData = {
 };
 
 export const years = [2022, 2023, 2024, 2025];
-export const lineItems: LineItem[] = ["Revenue", "COGS", "Gross Profit", "EBITDA", "Net Income", "Total Assets", "Cash & Cash Equivalents", "Total Liabilities", "Short-term Debt", "Long-term Debt"];
+export const lineItems: LineItem[] = ["Revenue", "COGS", "Gross Profit", "EBITDA", "Net Income", "Cash & Cash Equivalents", "Total Assets", "Total Liabilities", "Short-term Debt", "Long-term Debt"];
